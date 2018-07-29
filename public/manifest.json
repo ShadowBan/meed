@@ -1,6 +1,6 @@
 {
-  "name": "meed",
-  "short_name": "meed",
+  "name": "Meed",
+  "short_name": "Meed",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
@@ -16,5 +16,8 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "theme_color": "#4DBA87",
+  "share_target": {
+    "url_template": "share/accept?title={title}&text={text}&url={url}"
+  }
 }
