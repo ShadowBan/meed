@@ -18,6 +18,11 @@
   "background_color": "#000000",
   "theme_color": "#4DBA87",
   "share_target": {
-    "url_template": "share/accept?title={title}&text={text}&url={url}"
+    "action": "share.html",
+    "params": {
+      "title": "name",
+      "text": "description",
+      "url": link
+    }
   }
 }
