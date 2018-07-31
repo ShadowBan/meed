@@ -18,6 +18,7 @@
   "background_color": "#000000",
   "theme_color": "#4DBA87",
   "share_target": {
+    "url_template": "share/post.html?title={title}&text={text}&url={url}",
     "action": "share/post.html",
     "params": {
       "title": "title",
