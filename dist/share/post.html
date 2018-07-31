@@ -6,9 +6,15 @@
   <script>
     function onLoad() {
       var parsedUrl = new URL(window.location.toString());
-      console.log('Title shared: ' + parsedUrl.searchParams.get('name'));
-      console.log('Text shared: ' + parsedUrl.searchParams.get('description'));
-      console.log('URL shared: ' + parsedUrl.searchParams.get('link'));
+      let title = parsedUrl.searchParams.get('title');
+      let text = parsedUrl.searchParams.get('text');
+      let url = parsedUrl.searchParams.get('url');
+      console.log('Title shared: ' + title);
+      console.log('Text shared: ' + text);
+      console.log('URL shared: ' + url);
+
+      rawJson = {title: title, text: text, url: url};
+      document.body.innerHTML = JSON.stringify(rawJson);
     }
 
     window.addEventListener('load', onLoad);
